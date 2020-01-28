@@ -1,0 +1,63 @@
+html
+	font-size: 16px
+	font-family: $regular-font
+	height: 100%
+
+body
+	margin: 0
+	-webkit-font-smoothing: antialiased
+	color: #343e5c
+	height: 100%
+	&.fixed
+		overflow: hidden
+
+section
+	position: relative
+	// padding: 40px 0
+
+
+ul, li
+	padding: 0
+	margin: 0
+	list-style: none
+
+p
+	margin: 0
+
+h1, h2, h3, h4, h5
+	margin-top: 0
+	margin-bottom: 0
+	font-weight: normal
+
+*, *::after, *::before
+	box-sizing: border-box
+a
+	color: $light-grey
+	text-decoration: none
+	display: inline-block
+	transition: $trs
+
+audio, canvas, iframe, img, svg, video, textarea
+	vertical-align: middle
+
+.container
+	max-width: 1170px
+	margin: 0 auto
+	padding-left: 15px
+	padding-right: 15px
+	&-fluid
+		max-width: 1920px
+		margin: 0 auto
+		overflow: hidden
+
+textarea, input
+	outline: none
+.display-none
+	display: none!important
+.display-flex
+	display: flex!important
+span
+	display: inline-block
+.debug
+	+debug(rgba(255, 192, 203, 0.5), 1px solid yellow)
+	z-index: 2

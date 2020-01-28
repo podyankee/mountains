@@ -1,0 +1,38 @@
+header.header.container-fluid
+	.header-top.container
+		.header-top__content
+			.logo-wrapper
+				a(href="#").logo-link
+					img(src="assets/img/logo.png", alt="Logo")
+			.header-navigation
+				+menu('header-nav', [{
+				'title': 'our story',
+				'url':'http://google.com'
+				}, {
+				'title': 'services ',
+				'url': 'http://facebook.com'
+				}, {
+				'title': 'work',
+				'url':'http://twitter.com'
+				}, {
+				'title': 'journal',
+				'url':'http://vk.com/'
+				},{
+				'title': 'contact',
+				'url':'http://instagram.com/'
+				},{
+				'title': 'work',
+				'url':'http://instagram.com/'
+				},{
+				'title': 'journal',
+				'url':'http://instagram.com/'
+				},
+				], 1 )
+			a.header-button__call(href="tel:8800000000") call us
+	.container
+		.header__main
+			.header__main-content
+				h1.header__main-content-title Travel with us
+				span to the Mountains
+				p Enthusiastically optimize excellent imperatives after fully tested action items. Phosfluorescently engage resource maximizing infomediaries.
+				a.header-button__order(href="#") Order now

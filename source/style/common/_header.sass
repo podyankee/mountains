@@ -1,0 +1,101 @@
+.header
+	min-height: 700px
+	background: url(../img/header-bg.jpg) center / cover no-repeat
+	position: relative
+	&-top
+		text-transform: uppercase
+		margin-bottom: 130px
+	a
+		text-transform: uppercase
+.header-top
+	&__wrapper
+		outline: 1px solid pink
+	&__content
+		height: 90px
+		display: flex
+		align-items: center
+		position: relative
+	&::before
+		content: ''
+		width: 100%
+		height: 90px
+		position: absolute
+		top: 0
+		left: 0
+		background-color: $white
+		opacity: 0.23
+.header-nav
+	font-family: $regular-font
+	font-weight: 700
+	&__list
+		display: flex
+		align-items: center
+		& > *
+			&:not(:last-child)
+				margin-right: 25px
+	&__link
+		font-size: 12px
+		padding-bottom: 10px
+		padding-top: 10px
+		border-bottom: 2px solid transparent
+		&:hover, .header-nav__item_active a
+			border-bottom: 2px solid $accent
+.header-nav__item_active a
+	border-bottom: 2px solid $accent
+
+.logo-wrapper
+	margin-left: 20px
+	flex: 0 0 165px
+	max-width: 165px
+.header
+	&-navigation
+		margin-left: 30px
+	&-button__call
+		+btn()
+		border: 3px solid $accent
+		padding: 15px 45px
+		margin-left: auto
+		&:hover
+			color: $white
+			background-color: $accent
+.header__main
+	padding: 45px
+	border: 3px solid $white
+	border-top: 3px solid transparent
+	position: relative
+	&-content
+		max-width: 570px
+		&-title
+			font-size: 50px
+			font-weight: 700
+			letter-spacing: 6px
+			color: $white
+			text-transform: uppercase
+	span
+		font-family: 'bringing', $helvetica
+		font-size: 66px
+		line-height: 30px
+		color: $accent
+		margin-bottom: 25px
+	p
+		font-size: 18px
+		line-height: 29px
+		color: rgba(255, 255, 255, 0.75)
+		max-width: 465px
+		margin-bottom: 30px
+	&::before, &::after
+		content: ''
+		position: absolute
+		top: -3px
+		height: 3px
+		background-color: $white
+	&::before
+		width: 739px
+		left: -3px
+	&::after
+		width: 201px
+		right: -3px
+
+.header-button__order
+	+btn($bg: $accent, $clr: $white, $fs: 14px)
+	padding: 25px 70px
