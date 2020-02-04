@@ -1,12 +1,12 @@
 {
-  "name": "farcer-e-shop",
+  "name": "mountains",
   "version": "1.0.0",
   "author": "k.kuznetsov",
   "license": "MIT",
   "scripts": {
     "deploy": "gh-pages -d build"
   },
-  "homepage": "git@github.com:podyankee/front-shop.git",
+  "homepage": "https://github.com/podyankee/mountains.git",
   "devDependencies": {
     "browser-sync": "^2.26.5",
     "del": "^4.1.1",
@@ -46,7 +46,20 @@
     "jquery": "~3.4.1",
     "plumber": "^0.4.8",
     "vinyl-ftp": "^0.6.1"
-  },
+	},
+	"browserslist": [
+		"> 1%",
+		"ie >= 8",
+		"edge >= 15",
+		"ie_mob >= 10",
+		"ff >= 45",
+		"chrome >= 45",
+		"safari >= 7",
+		"opera >= 23",
+		"ios >= 7",
+		"android >= 4",
+		"bb >= 10"
+	],
   "dependencies": {
     "gh-pages": "^2.0.1",
     "normalize.css": "~8.0.1",

@@ -38,7 +38,7 @@ module.exports = function () {
 					]
 				}),
 				imagemin.optipng({ optimizationLevel: 3 }),
-				pngquant({ quality: '65-70', speed: 5 })
+				pngquant({ quality: [0.7, 0.75]})
 			], {
 					verbose: true
 				})))

@@ -1,7 +1,7 @@
 'use strict';
 
 global.$ = {
- 
+
   package: require('./package.json'),
   config: require('./gulp/config'),
   path: {
@@ -14,7 +14,7 @@ global.$ = {
   del: require('del'),
   browserSync: require('browser-sync').create(),
   gp: require('gulp-load-plugins')(),
- 
+
 };
 
 $.path.task.forEach(function(taskPath) {
@@ -42,7 +42,6 @@ $.gulp.task('build', $.gulp.series(
 		'css:vendor',
 		'sass:build-min',
 		'copy:image:build',
-		'svg:sprite:build',
 		'js:vendor:build',
 		'js:process:build-min'
 	)

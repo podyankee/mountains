@@ -61,3 +61,23 @@ span
 .debug
 	+debug(rgba(255, 192, 203, 0.5), 1px solid yellow)
 	z-index: 2
+.pt
+	padding-top: 115px
+.title-center
+	font-size: 30px
+	font-weight: 700
+	letter-spacing: 3px
+	line-height: 43px
+	color: #2c2e37
+	text-align: center
+	text-transform: uppercase
+	position: relative
+	&::before
+		content: ''
+		position: absolute
+		background-image: url(../img/waves.svg)
+		width: 83px
+		height: 10px
+		top: -40px
+		left: 50%
+		transform: translateX(-50%)
