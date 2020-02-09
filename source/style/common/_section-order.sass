@@ -1,0 +1,83 @@
+.order
+	padding-top: 135px
+	padding-bottom: 230px
+	background: #f6f4f4 url(../img/order-bg.jpg) center/cover no-repeat
+	&__title
+		color: #2c2e37
+		font-size: 20px
+		font-weight: 700
+		line-height: 42.73px
+		text-transform: uppercase
+		letter-spacing: 2.34px
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			background-image: url(../img/waves.svg)
+			width: 83px
+			height: 10px
+			top: -35px
+			left: 0
+	&__description
+		max-width: 700px
+		color: #949494
+		font-size: 16px
+		font-weight: 400
+		line-height: 26px
+		margin-bottom: 25px
+	&__form
+		max-width: 855px
+		border-radius: 4px
+		background-color: #ffffff
+		font-size: 16px
+		letter-spacing: 0.32px
+		margin-bottom: 20px
+		position: relative
+		&::after
+			content: ''
+			position: absolute
+			width: 2px
+			height: 35px
+			display: block
+			background-color: #ebebeb
+			opacity: 0.25
+			left: 300px
+			top: 10px
+		form
+			display: flex
+			align-items: center
+		input
+			border: none
+			padding-top: 23px
+			padding-bottom: 23px
+			&[type=text]
+				padding-left: 20px
+				color: #848484
+				+placeholder
+					color: #848484
+			&[type=submit]
+				margin-left: auto
+				margin-right: 4px
+				color: $white
+				font-weight: 700
+				text-transform: uppercase
+				letter-spacing: 1.6px
+				background-color: $accent
+				border-radius: 4px
+				width: 225px
+				height: 56px
+				cursor: pointer
+				padding: 0
+	&__name
+		width: 300px
+		border-top-left-radius: 4px
+		border-bottom-left-radius: 4px
+	&__phone
+		flex-grow: 1
+	&__disclaimer
+		color: $accent
+		font-size: 14px
+		line-height: 34px
+		letter-spacing: 0.28px
+		img
+			margin-right: 10px
