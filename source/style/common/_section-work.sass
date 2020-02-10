@@ -1,0 +1,67 @@
+.our-work
+	padding-bottom: 55px
+	&__title
+		margin-bottom: 75px
+	&__items
+		display: flex
+		justify-content: space-around
+	&__item
+		text-align: center
+		&-count
+			display: block
+			margin: 0 auto 55px
+			width: 48px
+			height: 48px
+			border: 3px solid $accent
+			border-radius: 50%
+			line-height: 48px
+			text-align: center
+			font-family: "roboto"
+			color: #3bb0eb
+			position: relative
+			&::before
+				position: absolute
+				content: ''
+				width: 2px
+				height: 55px
+				background-color: #f0f3f6
+				bottom: -58px
+				left: 50%
+			&::after
+				position: absolute
+				content: ''
+				height: 2px
+				width: 236px
+				background-color: #f0f3f6
+				top: 50%
+				left: 45px
+		&-image
+			width: 176px
+			height: 176px
+			background-color: #f0f3f6
+			border-radius: 50%
+			margin: 0 auto 20px
+			display: flex
+			align-items: center
+			justify-content: center
+			position: relative
+		&-descr
+			max-width: 205px
+		&-heading
+			font-family: "roboto"
+			line-height: 24px
+			color: #2c2e37
+			font-size: 18px
+		&-text
+			font-weight: 300
+			font-size: 16px
+			line-height: 24px
+			color: #949494
+.item__image
+	+absolute-center
+.our-work__item
+	&:last-child
+		.our-work__item-count
+			&::after
+				display: none
+
